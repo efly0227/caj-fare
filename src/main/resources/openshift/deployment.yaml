@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: caj-fare
-  namespace: caj-fare
+  namespace: user10
   labels:
     app: caj-fare
     version: v1
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: caj-fare
-          image: 'image-registry.openshift-image-registry.svc:5000/caj-fare/caj-fare'
+          image: 'image-registry.openshift-image-registry.svc:5000/user10/caj-fare'
           ports:
             - containerPort: 8080
               protocol: TCP
