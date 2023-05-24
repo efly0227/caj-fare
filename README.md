@@ -34,7 +34,7 @@ docker build -f Dockerfile-openjdk -t fare:latest .
 docker build -f Dockerfile-gradle -t fare:latest .
 ```
 
-* Run image
+* Run image 1234
 ```bash=
 # default port 8080
 docker run -p 8080:8080 fare:latest
